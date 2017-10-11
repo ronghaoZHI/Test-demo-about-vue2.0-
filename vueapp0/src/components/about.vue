@@ -24,22 +24,11 @@ export default {
         '星期六'
       ]
     }
-    
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-
-
 <style scoped>
-ul{
 
-}
-li{
-  /*display: inline-block;*/
-  /*list-style: none;*/
-  /*margin: 0;*/
-  /*font-size: 15px;*/
-}
 </style>
