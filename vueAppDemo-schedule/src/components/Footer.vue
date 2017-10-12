@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div id="foot">
 		<!-- <span>time:{{time}}</span> -->
 		<span>footer</span>
 	</div>
@@ -28,3 +28,18 @@ export default {
 
 }
 </script>
+<style scoped>
+	#foot{
+		position: absolute;
+		background-color: #aaa;
+		top: 100%;
+		transform: translate(0,-50px);
+		width: 100%;
+		height: 50px;
+		/*display: block;*/
+		margin: 0 auto;
+		text-align: center;
+	}
+
+</style>
+

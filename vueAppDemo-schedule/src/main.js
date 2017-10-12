@@ -19,11 +19,12 @@ Vue.config.productionTip = false
 
 // 每个应用将仅仅包含一个 store 实例
 const store = new Vuex.Store({
-// 
+//state状态变量  在子组件-通过 methods--fn(){this.$store.commit('XXX',flag);} 提交状态变更
+         //通过computed--fn(){return this.$store.state.isShowAbout;} 实时获取状态
   state: {
     
   },
-  //更改 Vuex 的 store 中的状态的唯一方法是提交 mutation
+  //更改 Vuex 的 store 中的状态的唯一方法是提交 mutation  //showAbout(state,flag){state.isShowAbout = flag;}
   mutations: {
     
   },
@@ -33,8 +34,19 @@ const store = new Vuex.Store({
    
   },
   actions:{
-  	
+  	 getData:function (commit,state){
+      Vue.axios.get('/user')
+      .then(function (response) {
+        console.log(response.Data);
+        // state.Data = response.Data;
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+     },
+
   }
+
 })
 
 /* eslint-disable no-new */

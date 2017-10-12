@@ -2,7 +2,7 @@
 <div>
 	<!-- view 框架搭建  -->
 	<div class="progress">
-	  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+	  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
 	    <!-- <span class="sr-only">60% Complete</span> -->
 	  </div>
 	</div>
@@ -32,18 +32,19 @@ import VHeader from "@/components/Header.vue";
 import VFooter from "@/components/Footer.vue";
 import VAside from "@/components/aside.vue";
 
-
 export default {
 	name:"App",
 	// data(){},
+	computed:{
 
+	},
+	mounted:{},
 	components:{
 		VHeader,
 		VFooter,
 		VAside
 	}
 }
-
 
 </script>
 

@@ -12,6 +12,7 @@ const express = require('express')
 const webpack = require('webpack')
 const proxyMiddleware = require('http-proxy-middleware')
 const webpackConfig = require('./webpack.dev.conf')
+const fs = require('fs');
 
 // default port where dev server listens for incoming traffic
 const port = process.env.PORT || config.dev.port
@@ -22,6 +23,23 @@ const autoOpenBrowser = !!config.dev.autoOpenBrowser
 const proxyTable = config.dev.proxyTable
 
 const app = express()
+
+const data = require('../Data.json');
+// var musicData = data.musicData;
+
+const apiRoutes = express.Router();
+
+apiRoutes.get('/music-data', function (req, res) {
+    if(data){
+    res.status(200).json({
+      Data:data.Data;
+    });
+  }else{
+    res.status(500).json({ error: '服务器爆炸了!!' });
+  }
+});
+
+
 const compiler = webpack(webpackConfig)
 
 const devMiddleware = require('webpack-dev-middleware')(compiler, {
