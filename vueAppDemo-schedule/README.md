@@ -1,4 +1,4 @@
-# vueapp0
+# vueapp-schedule
 
 > A Vue.js project
 
