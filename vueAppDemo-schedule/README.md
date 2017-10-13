@@ -1,7 +1,6 @@
 # vueapp0
 
 > A Vue.js project
-## link:转于 https://segmentfault.com/a/1190000007630677
 
 ## Build Setup
 
