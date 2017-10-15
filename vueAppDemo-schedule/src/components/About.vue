@@ -1,6 +1,7 @@
 <template>
 	<div>		
-		<h2>{{name}}</h2>
+		<h2>about me</h2>
+		<span @click = 'showAbout'><img src="" alt="">关闭</span>
 	</div>
 </template>
 
@@ -9,11 +10,17 @@
 		name:"About",
 		data(){
 			return {
-				name:"about"
+
 			} 
 		},
+		computed:{
+			
+		},
 		methods:{
-
+			showAbout(){
+				this.$store.commit('showAbout',false);
+			}
 		}
 	}
+
 </script>

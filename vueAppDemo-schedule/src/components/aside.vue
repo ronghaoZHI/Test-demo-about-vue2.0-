@@ -5,9 +5,11 @@
 		    <div class="thumbnail">
 		      <img src="" alt="img">
 		      <div class="caption">
-		        <h3> label</h3>
-		        <p>aside...</p>
+		         <img class="aside-label" src="" alt="label">
+		        <p>aside</p>
+		        <p>aside</p>
 		        <!-- <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p> -->
+
 		      </div>
 		    </div>
 		  </div>

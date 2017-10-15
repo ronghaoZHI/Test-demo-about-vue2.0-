@@ -1,7 +1,7 @@
 <template>
 	<div id="foot">
 		<!-- <span>time:{{time}}</span> -->
-		<span>footer</span>
+		<span>DesignedByZhi<br>2017-10-13</span>
 	</div>
 </template>
 

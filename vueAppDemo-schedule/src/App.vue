@@ -35,6 +35,9 @@ import VAside from "@/components/aside.vue";
 export default {
 	name:"App",
 	// data(){},
+	beforeCreated:{
+		
+	};
 	computed:{
 
 	},

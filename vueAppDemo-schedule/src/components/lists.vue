@@ -1,30 +1,17 @@
 <template>
-	<div>
-
-		<div class="panel panel-default">
-		  		<div class="panel-heading">task-title</div>
+	<div class="lists">
+	<img class="loadding" src="" alt="loaddingImg" v-if='isGetData'>
+		<div class="panel panel-default" v-for ='li in listData'>
+		  		<div class="panel-heading" >{{ listData.name}}</div>
 				  <div class="panel-body">
 				    <!-- Panel content -->
 				    <!-- <h1>任务追踪</h1> -->
 				    <p>
-				    	<p>11111111</p>
-				      <strong>
-				        <router-link to="createTask">查看任务</router-link>
-				      </strong>
-				    </p>
-				  </div>
-			</div>
-
-			<div class="panel panel-default">
-		  		<div class="panel-heading">task-title</div>
-				  <div class="panel-body">
-				    <!-- Panel content -->
-				    <!-- <h1>任务追踪</h1> -->
-				    <p>
-				    	<p>11111111</p>
-				      <strong>
-				        <router-link to="createTask">查看任务</router-link>
-				      </strong>
+				    	<p >{{listData.text}}</p>
+				      <span>
+				        <!-- <router-link to="createTask">查看任务</router-link> -->
+						{{listData.datatime}}
+				      </span>
 				    </p>
 				  </div>
 			</div>
@@ -34,10 +21,18 @@
 
 <script>
 export default {
-	name:"Lists"
-	// data(){
-
-	// },
+	name:"lists",
+	data(){
+       return {}
+	},
+	computed:{
+		listData(){
+			return this.$store.state.Data;
+		},
+		isGetData(){
+			return this.$store.states.isGetData;
+		}
+	},
 	// methods:{
 
 	// }

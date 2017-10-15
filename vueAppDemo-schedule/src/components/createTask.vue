@@ -29,9 +29,10 @@
 			return {
 				name:"创建任务"
 			} 
-		}
-		// methods:{
-
-		// }
+		},
+		computed:{},
+		created:{},
+		mounted:{},
+		methods:{}
 	}
 </script>
