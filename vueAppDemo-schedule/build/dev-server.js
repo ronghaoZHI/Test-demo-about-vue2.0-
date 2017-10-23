@@ -38,7 +38,7 @@ apiRoutes.get('/music-data', function (req, res) {
     res.status(500).json({ error: '服务器爆炸了!!' });
   }
 });
-
+app.use(apiRoutes);
 
 const compiler = webpack(webpackConfig)
 

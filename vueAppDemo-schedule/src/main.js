@@ -7,6 +7,7 @@ import Vuex from 'Vuex'
 import axios from 'axios';
 import VueAxios from 'vue-axios';
 import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/js/bootstrap.js'
 
 
 // 用 axios 进行 Ajax 请求
@@ -16,6 +17,7 @@ Vue.use(VueAxios,axios);
 Vue.use(Vuex);
 
 Vue.config.productionTip = false
+
 
 // 每个应用将仅仅包含一个 store 实例
 const store = new Vuex.Store({
